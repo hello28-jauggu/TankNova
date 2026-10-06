@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width,
+    initial-scale=1,
+    maximum-scale=1,
+    user-scalable=no"
+  >
+
+  <title>TankNova</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="menu" class="menu">
+
+    <div class="card">
+
+      <div class="logo">
+        TANK<span>NOVA</span>
+      </div>
+
+      <p>
+        Multiplayer Tank Arena
+      </p>
+
+      <input
+        id="name"
+        maxlength="18"
+        placeholder="Enter username"
+      >
+
+      <button id="play">
+        PLAY
+      </button>
+
+      <small>
+        PC: WASD + Mouse<br>
+        Mobile: Joystick + FIRE
+      </small>
+
+    </div>
+
+  </div>
+
+  <canvas id="game"></canvas>
+
+  <div id="hud" hidden>
+
+    <div class="top">
+
+      <div class="brand">
+        TANKNOVA
+      </div>
+
+      <div id="leaderboard"></div>
+
+    </div>
+
+    <div class="bottom">
+
+      <div id="level">
+        LVL 1
+      </div>
+
+      <div class="bar">
+        <i id="xp"></i>
+      </div>
+
+      <div class="bar hp">
+        <i id="hp"></i>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="joystick" class="joystick">
+    <div class="knob"></div>
+  </div>
+
+  <div id="fireButton" class="fire">
+    FIRE
+  </div>
+
+  <script src="game.js"></script>
+
+</body>
+
+</html>
